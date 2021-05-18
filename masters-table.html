@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Program Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e9814754aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="main-table.html">Graduate Programs</a>
+        <a href="doctorals-table.html">Dotoral Degrees</a>
+        <a href="masters-table.html">Master's Degrees</a>
+        <a href="specialists-table.html">Specialist Degrees</a>
+        <a href="combined-table.html">Combined Degrees</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Graduate Programs</h1>
+            <div class="intro">
+                <p> We invite you to fully explore the graduate programs in FAU's eight academic colleges offering
+                    graduate degrees. Listed
+                    below are the graduate degrees and majors sorted by degree.</p>
+            </div>
+            </br>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col-sm-2">
+                    <div class="card-1">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap" style="font-size: 36px;"></i>
+                            <h5 class="card-title"><a class="card-i" href="doctorals-table.html">Doctoral Degrees</a></h5>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card-2">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap" style="font-size: 36px;"></i>
+                            <h5 class="card-title"><a class="card-i" href="masters-table.html">Master's</br> Degrees</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card-3">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap" style="font-size: 36px;"></i>
+                            <h5 class="card-title"><a class="card-i" href="specialists-table.html">Specialist Degrees</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card-4">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap" style="font-size: 36px;"></i>
+                            <h5 class="card-title"><a class="card-i" href="combined-table.html">Combined Degrees</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </br>
+            <hr class="separator separator--small" />
+            <div class="col-4 sm-col-12">
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" id="myInput" onkeyup="inputSearch()" placeholder="Search for program.."
+                        title="Type in a program">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group mb-3 mt-3">
+                    <select class="custom-select" id="select2" onchange="select2Search()">
+                        <option value="">COLLEGE</option>
+                        <option value="Arts &amp; Letters">Arts &amp; Letters</option>
+                        <option value="Business">Business</option>
+                        <option value="Education">Education</option>
+                        <option value="Engineering and Computer Science">Engineering and Computer Science</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Social Work and Criminal Justice">Social Work and Criminal Justice</option>
+                        <option value="Nursing">Nursing</option>
+                        <option value="Science">Science</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table class="table" id="program-table">
+            <thead>
+                <tr>
+                    <th scope="col">Program</th>
+                    <th scope="col">Degree</th>
+                    <th scope="col">College</th>
+                    <th scope="col">GRE/GMAT</th>
+                    <th scope="col">Combined</th>
+                    <th scope="col">Apply</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Accounting</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mac_accounting.pdf"
+                            rel="noopener noreferrer" target="_blank">M.AC.</a> , <a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                                rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer"
+                            target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer"
+                            target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Adult and Community Educational Leaders</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_educational_leadership_adult_community.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Adult/Gerontological Nurse Practitioner</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_adultgerontological.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.N.</a></td>
+                    <td>Nursing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Advanced Holistic Nursing</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_advancedholistic.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.N.</a></td>
+                    <td>Nursing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Anthropology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_anthropology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mat_anthropology.pdf"
+                            rel="noopener noreferrer" target="_blank">M.A.T.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Applied Math and Statistics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_applied_mathematical_statistics.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Artificial Intelligence</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_artificial_intelligence.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Biological Sciences</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_biological_sciences.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mst_biological_sciences.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.T.</a> </td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td><i class="far fa-check-square"></i> </td>
+                    </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Biomedical Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_bioengineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Biological Sciences</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_biomedical_science.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Medicine</td>
+                    <td> </td>
+                    <td> </td>
+                    </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Business Administration</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td><i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Business Analytics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td><i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Business Biotechnology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/psm_business_biotech.pdf" rel="noopener noreferrer"
+                            target="_blank">P.S.M.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Chemistry</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_chemistry.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mst_chemistry.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.T.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Civil Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_civil_engineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td><i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Clinical Mental Health Counseling</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_counselor_education_mental_health.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td><i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Clinical Nurse Leader</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_clinicalnurseleader.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.N.</a></td>
+                    <td>Nursing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Clinical Rehabilitation Counseling</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_counselor_education_rehab.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Communication Studies</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_communicationstudies.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Comparative Literature</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_comp_lit.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Computer Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_computer_engineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Computer Science</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_computer_science.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Computer Science (Professional)</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_computer_science_professional.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Creative Writing</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_creativewriting.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Criminology and Criminal Justice</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_criminology_criminal_justice.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Social Work and Criminal Justice</td>
+                    <td> </td>
+                    <td><i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Curriculum & Instruction (Without Certification)
+                        <ul>
+                            <li>Art</li>
+                            <li>Biology</li>
+                            <li>Chemistry</li>
+                            <li>Early Childhood Education</li>
+                            <li>English</li>
+                            <li>ESOL Education</li>
+                            <li>French</li>
+                            <li>Mathematics</li>
+                            <li>Physics</li>
+                            <li>Reading</li>
+                            <li>Social Sicence</li>
+                            <li>Spanish</li>
+                            <li>Teacher Leadership</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_curriculum_instruction_wocert_art_english_french_german.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td>  </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Curriculum & Instruction (Without Certification)
+                        <ul><li>Multicultural Education</li></ul>
+                    </td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_curriculum_instruction_wocert_art_english_french_german.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Data Science and Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_datascience_analytics_engineering.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Data Science in Business</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_datascience_analytics_business.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Data Science in Society</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_datascience_analytics_artsandletters.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Data Science via Scientific Inquiry</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_datascience_analytics_science.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Design and Technology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_designandtech.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Economics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_economics.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Educational Psychology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_educational_psychology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Electrical Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_electrical_engineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Elementary Education</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_elementary_education.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Elementary Education plus Certification</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_elementary_education_pcert.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">English</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_english.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Entrepreneurship</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Environmental Education</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_environmental_education.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Environmental Science</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_environmental_science.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Exceptional Student Education</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_exceptional_student_education.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Business Valuation</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_executive_accounting_bus_valuation.pdf"
+                            rel="noopener noreferrer" target="_blank">M.AC.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Forensic Accounting</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_forensicaccounting.pdf" rel="noopener noreferrer"
+                            target="_blank">M.AC.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Forensic Analytics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_digital_forensics_analytics.pdf"
+                            rel="noopener noreferrer" target="_blank">M.AC.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Health Administration</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mha_health_executive.pdf" rel="noopener noreferrer"
+                            target="_blank">M.H.A.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Internal Auditing</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_executive_accounting_internal_auditing.pdf"
+                            rel="noopener noreferrer" target="_blank">M.AC.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive MBA</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_executive_international_business.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Professional Accounting</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_executive_accounting_professional.pdf"
+                            rel="noopener noreferrer" target="_blank">M.AC.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Executive Taxation</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mtxexective_taxation.pdf" rel="noopener noreferrer"
+                            target="_blank">M.TX.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Exercise and Health Promotion</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_exercise_science_health_promotion.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Family Nurse Practitioner</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_familynursepractitioner.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.N.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Finance</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Finance</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_finance.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">French</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_french.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Geosciences</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_geosciences.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Graphic Design</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_graphicdesign.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Health Administration</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a>, <a
+                            href="https://www.fau.edu/graduate/programs/docs/mha_health_admin.pdf" rel="noopener noreferrer"
+                            target="_blank">M.H.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Higher Education Leaders</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_educational_leadership_higher_ed.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">History</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_history.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Information System</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Information Technology and Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_informationtech_management.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Information Technology and Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_information_tech_management.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Instructional Technology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_instructional_technology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">International Business</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Linguistics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_linguistics.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Marine Science and Oceanography</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_marine_science_oceanography.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Marketing</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Mathematical Science</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_mathematical_sciences.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mst_mathematical_sciences.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.T.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Mechanical Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_mechanical_engineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Media, Technology & Entertainment</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_mediatech.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Medical Physics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_medical_physics.pdf" rel="noopener noreferrer"
+                            target="_blank">P.S.M.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Music</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mm_music.pdf" rel="noopener noreferrer"
+                            target="_blank">M.M.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Non-Profit Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mnm_noprofit_management.pdf" rel="noopener noreferrer"
+                            target="_blank">M.N.M.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Nurse Educator</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_nurseeducator.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.N.</a></td>
+                    <td>Nursing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Nursing Administration and Financial Leadership</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msn_nurseadmin_financialleadership.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.N.</a></td>
+                    <td>Nursing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Ocean Engineering</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_ocean_engineering.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Engineering and Computer Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Online MBA</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_online_international.pdf" rel="noopener noreferrer"
+                            target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Online MBA - Hospitality Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_online_hospitality.pdf" rel="noopener noreferrer"
+                            target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Operations Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_accounting_entrepreneurship_finance_healthadmin.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Performance</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_acting.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Physics</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_physics.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mst_physics.pdf"
+                            rel="noopener noreferrer" target="_blank">M.S.T.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Political Science</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_politicalscience.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a>, <a href="https://www.fau.edu/graduate/programs/docs/mat_politicalscience.pdf"
+                            rel="noopener noreferrer" target="_blank">M.A.T.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Professional MBA</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_professional_international.pdf"
+                            rel="noopener noreferrer" target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Professional MBA - Hospitality Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_professional_hospitality.pdf" rel="noopener noreferrer"
+                            target="_blank">M.B.A.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Psychology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_psychology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Public Administration</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mpa_public_administration.pdf" rel="noopener noreferrer"
+                            target="_blank">M.P.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Reading Education</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_reading_education.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">School Counseling</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_counselor_education_school.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">School Leaders (K-12)</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_educational_leadership.pdf" rel="noopener noreferrer"
+                            target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Secondary Education (With Certification)
+                        <ul>
+                            <li>Art</li>
+                            <li>Biology</li>
+                            <li>Chemistry</li>
+                            <li>English</li>
+                            <li>Mathematics</li>
+                            <li>Physics</li>
+                            <li>Social Sicence</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/med_secondary_ed_wcert_art_bio_chem.pdf"
+                            rel="noopener noreferrer" target="_blank">M.Ed.</a></td>
+                    <td>Education</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Social Work</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/msw_social_work.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.W.</a></td>
+                    <td>Social Work and Criminal Justice</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Sociology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_sociology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Spanish</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_spanish.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                 <tr>
+                    <td scope="row">Speech-Language Pathology/Audiology</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_speech_language_pathology.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Sport Management - On Campus</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_sport_oncampus.pdf" rel="noopener noreferrer"
+                            target="_blank">M.B.A.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Sport Management - Online</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mba_sport_online.pdf" rel="noopener noreferrer"
+                            target="_blank">M.B.A.</a></td>
+                    <td>Education</td>
+                    <td> <i class="far fa-check-square"> </i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Studio Art</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mfa_visualart.pdf" rel="noopener noreferrer"
+                            target="_blank">M.F.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Supply Chain Management</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ms_supply_chain_management.pdf" rel="noopener noreferrer"
+                            target="_blank">M.S.</a></td>
+                    <td>Business</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Taxation</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/mtx_taxation.pdf" rel="noopener noreferrer"
+                            target="_blank">M.TX.</a></td>
+                    <td>Business</td>
+                    <td> <i class="far fa-check-square"></i> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Teaching of French</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_teaching_french.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Teaching of Spanish</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_llcl_teaching_spanish.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Urban and Regional Planning</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/murp_urban_regional_planning.pdf" rel="noopener noreferrer"
+                            target="_blank">M.U.R.P.</a></td>
+                    <td>Science</td>
+                    <td> </td>
+                    <td> <i class="far fa-check-square"></i></td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Women, Gender and Sexuality Studies</td>
+                    <td><a href="https://www.fau.edu/graduate/programs/docs/ma_womensstudies.pdf" rel="noopener noreferrer"
+                            target="_blank">M.A.</a></td>
+                    <td>Arts &amp; Letters</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2021</a>
+                        <a href="https://www.fau.edu/graduate/applyonline/index.php" rel="noopener noreferrer" target="_blank">
+                            <i class="fas fa-angle-double-right"></i> 2022</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> Footer here (Thao Nguyen)</p>
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>
