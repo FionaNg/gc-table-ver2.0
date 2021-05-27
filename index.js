@@ -11,7 +11,7 @@ function select1Search(){
     tr = table.getElementsByTagName("tr");
     
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
+      td = tr[i].getElementsByTagName("td")[1 || 4];
 
       if (td) {
         txtValue = td.textContent.toUpperCase() || td.innerText.toUpperCase();
@@ -41,7 +41,6 @@ function select1Search(){
   } else {
     filter(datasearch,1);
   }
-
 }
 
 function select2Search(){
