@@ -120,7 +120,7 @@ h5 {
   margin-bottom: 10px;
   border: 1px solid gray;
   border-radius: 4%;
-  background-image: url(image/fau-background-1.jpg);
+  background-image: url("image/fau-background-1.jpg");
   background-size: 130%;
   background-repeat: no-repeat;
 }
