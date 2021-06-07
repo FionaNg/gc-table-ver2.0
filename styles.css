@@ -15,7 +15,9 @@ tr:hover {
   border-bottom: 1px solid rgb(83, 81, 81);
   text-decoration: none;
 }
-
+thead {
+  text-align: center;
+}
 th,
 td {
   border: 1px solid gray;
