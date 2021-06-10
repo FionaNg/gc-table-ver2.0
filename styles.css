@@ -49,8 +49,18 @@ td {
 .fa-info {
   font-size: small;
   position: relative;
-  left: 50%;
   color: #1f68b1;
+}
+.btn-info {
+  background-color: transparent;
+  border-color: rgba(76, 108, 138, 0.199);
+  border-radius: 25%;
+  transition: all 50ms ease-in-out;
+  margin-left: 30px;
+}
+.btn-info:hover {
+  background-color: transparent;
+  border-color: rgba(43, 136, 223, 0.267);
 }
 
 ul {
@@ -75,7 +85,7 @@ hr {
 p {
   font-size: 16px;
 }
-/* nagv siderbar sample display */
+/* nagv siderbar sample display -remove bc this is just for testing purpose */
 .sidebar {
   margin-left: 50px;
   padding: 0;
